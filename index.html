@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cric Api</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body ng-app="playerInfo">
+    <div id="content" ng-controller="playerCntr">
+        <h1>Know Your Player</h1>
+        <div id="maincont">
+            <label for="">Select Player</label>
+            <select name="" id="list" ng-model="playerName">
+                <option class="opt" value="35320">Sachin</option>
+                <option class="opt" value="44936">AB de villiers</option>
+                <option class="opt" value="28114">Rahul Dravid</option>
+                <option class="opt" value="35263">Virendra Sehwag</option>
+                <option class="opt" value="30750">VVS Laxman</option>
+            </select>
+            <button ng-click="findnow()">Search</button>
+            <h2>{{done}}</h2> <img src="{{url}}" alt="">
+            <h1>Player Info</h1>
+            <h3>Country :{{country}}</h3>
+            <h3>Full Name :{{fullName}}</h3>
+            <h3>Born: {{born}}</h3>
+            <h3>Current Age :{{currentAge}}</h3>
+            <h3>Playing Role :{{playingRole}}</h3>
+            <h3>Batting Style :{{battingStyle}}</h3>
+            <h3>Bowling Style :{{bowlingStyle}}</h3>
+            <h3>Twenty20</h3>
+            <h3>Average: {{twenty20}}</h3>
+            <h3>Strike Rate: {{sr}}</h3>
+            <h3>Runs : {{run}}</h3>
+            <h3>High Score : {{hs}}</h3>
+            <h3>Innings : {{Inns}}</h3>
+            <h3>Matches : {{Mat}}</h3>
+        </div>
+    </div>
+</body>
+
+</html>
