@@ -1,0 +1,44 @@
+body {
+    background: url(images/Cricketwall2.jpg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*    background-size: cover;*/
+}
+
+#content {
+    width: 40%;
+    margin: 100px auto 0px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 40px gray;
+    /*    position: relative;*/
+}
+
+#content h1 {
+    text-align: center;
+    color: brown;
+}
+
+#maincont {
+    margin: 20px auto;
+    width: 85%;
+}
+
+#maincont label {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#maincont button {
+    font-size: 17px;
+    font-weight: bold;
+    color: darkblue;
+    box-shadow: 2px 2px 4px gray;
+    background-color: dodgerblue;
+}
+
+#list {
+    font-size: 17px;
+    color: darkblue;
+}
